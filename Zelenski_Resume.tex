@@ -1,0 +1,121 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\addtolength{\textheight}{1in}
+\addtolength{\textwidth}{.5in}
+\addtolength{\voffset }{-.5in}
+\addtolength{\oddsidemargin }{-.5in}
+\setlength{\parindent}{0pt}
+
+%for removing natural indent in awards, skills sections for list
+\usepackage{enumitem}
+
+\renewcommand\familydefault{\sfdefault}
+\renewcommand\labelitemi{--}
+
+\begin{document}
+
+\name{{\LARGE Sasha Zelenski}}
+\address{(319) 457-6000 $|$ azelenski@uiowa.edu}
+
+\begin{resume}
+ 
+\section{EDUCATION}
+    {\bf B.S.E. Computer Science and Engineering,} {\small 2018-2022}  \\
+    University of Iowa $|$ GPA 3.47 \\
+    { Engineering and General Honors Programs $|$ Mathematics Minor} \\
+    \\
+    {\bf Intended B.S. Chemistry,} {\small 2017-2018}  \\
+    University of California, Berkeley $|$ GPA 3.53 \\
+    { Transferred to University of Iowa}
+    
+\section{EXPERIENCE}
+
+    %-- Template --%
+  %  {\bf Position} -- {\sl Company, Inc.} \\
+   % {\footnotesize Bellingham, WA $|$ website $|$ Date Start- Date End}
+    %Company description
+    %\begin{itemize} \itemsep -2pt
+     %   \item Responsibility
+      %  \item Responsibility
+       % \item Responsibility
+%    \end{itemize}
+
+    {\bf Undergraduate Research Assistant} -- {\sl University of Iowa Technology Institute} \\
+    {\footnotesize Iowa City, IA $|$ May 2020-Present}
+
+    \begin{itemize} \itemsep -2pt
+       \item Developed algorithm to analyze oil weathering by linking compound signatures over different sample dates and filtering target vs non-target peaks in MATLAB
+        \item This research will be applied to reduce the necessity and usage of dispersants in oil spill cleanup
+    \end{itemize}
+
+
+    {\bf Undergraduate Research Assistant} -- {\sl University of Iowa Hydroscience \& Engineering} \\
+    {\small Iowa City, IA $|$ June 2019-Present}
+
+    \begin{itemize} \itemsep -2pt
+       \item Investigate statistical and deep learning methods for predicting pH and ORP sensor readings from a chlorination system in Nicaragua
+        \item Use TensorFlow and Keras libraries to build a multi-step LSTM network predicting those readings + chlorine levels, enabling community members in Nicaragua to regularly maintain the chlorinator
+    \end{itemize}
+    
+
+\section{PROJECTS}
+    {\bf Senior Capstone Project} -- {\sl University of Iowa, sponsored by Collins Aerospace} \\
+    {\small Iowa City, IA $|$ Nov 2020-May 2021} 
+    
+     \begin{itemize} \itemsep -2pt
+       \item Implementing an eye tracking algorithm using machine learning techniques to detect gaze direction of pilots’ pupils within 3 degrees of error, as well as to record fixations and saccades
+        \item Work with two other UI students to develop tool increasing safety among fatigued pilots
+    \end{itemize}
+
+    
+\section{ACHIEVEMENTS}
+%Or should I keep it as AWARDS AND HONORS
+    \begin{itemize}[leftmargin=*] \itemsep -2pt
+        \item IEEE Oceans Conference Paper Co-Author, \small{2020}
+        \item INTEL International Science and Engineering Fair Finalist, \small{2017}
+        \item  National Technology Student Association Biotechnology Finalist, \small{2017}
+
+    \end{itemize}
+
+\section{TEACHING AND VOLUNTEER} 
+
+
+    {\bf Board Member \& Instructor} -- {\sl University of Iowa Swing Dancing Club} \\
+    {\small Iowa City, IA $|$ May 2018-Present} 
+    
+     \begin{itemize} \itemsep -3pt
+       \item Teach local dance lessons to students and community members (pre-COVID)
+       \item Update \& maintain club website
+       \item Organize area outreach projects
+    \end{itemize}
+    
+    {\bf Palliative Care \& Burn Unit Volunteer} -- {\sl University of Iowa Hospitals and Clinics} \\
+    {\small Iowa City, IA $|$ May 2018-Dec 2018} 
+    
+     \begin{itemize} \itemsep -3pt
+       \item Aided physical therapists with patient rehabilitation, increased quality of life for palliative patients, and maintained a sanitary working environment in surgery rooms
+    \end{itemize}
+    
+    {\bf Board Member \& Mentor} -- {\sl UC Berkeley's Lindy on Sproul} \\
+    {\small Berkeley, CA $|$ Aug 2017-May 2018} 
+    
+     \begin{itemize} \itemsep -3pt
+       \item Mentored students in weekly vintage swing dance classes
+       \item Choreographed small group performances each semester
+    \end{itemize}
+    
+\section{SKILLS}
+
+    \begin{itemize}[leftmargin=*] \itemsep -2pt
+	\item \textbf{Programming Languages:} Java, Python, C++, \& MATLAB
+	\item \textbf{Spoken Languages:} Ukrainian (Native), Spanish (Intermediate), Russian (Basic)
+	\item \textbf{Design:} LaTeX, CAD (Autodesk Inventor), Adobe Photoshop, GraphPad Prism
+	\item \textbf{Other:} Grafana, GitHub, SVN, MS Office, Data Collection
+
+    \end{itemize}
+    
+\end{resume}
+
+\end{document}
